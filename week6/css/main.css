@@ -1,54 +1,77 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategray;
+    /* Adding background image */
+    background-image: url(../images/white_brick_wall.png);
 }
+
 h1 {
     color: peru;
 }
+
 p {
     background-color: lightblue;
 }
+
 /* Selecting multiple elements */
 h1,h2,h3,h4 {
     text-decoration: underline;
 }
+
 /* Selecting child elements */
 nav ul {
     list-style: none;
 }
+
 /* Selecting child elements multiple level */
 nav ul a {
     color: darkslategray;
     text-decoration: none;
 }
+
 /* Selecting element with id value */
 #treatofweek {
-    background-color: orange;
+    /* Color image repeat position-x position-y */
+    background: orange url(../images/bread.jpg) no-repeat center center;
+    background-size: cover;
+    color: white;
 }
+
 /* Selecting HTML elements with class name */
 .orange-link {
     background-color: darkslategrey;
     color: orange;
     text-decoration: none;
 }
+
 .large-text {
     font-size: 20px;
 }
+
 /* Direct child selector */
 article>p {
+    /* CSS Typography Properties */
     font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
 }
+
 /* Adjacent sibling selector */
 h3+ul {
     border: 1px solid black;
 }
+
 /* Attribute selector */
 [href="#treatofweek"] {
     font-weight: bold;
 }
+
 img[src$=".jpg"] {
     border: 4px black solid;
 }
+
 /* 
     Using  Pseudo classes
     Styling navigation
@@ -60,31 +83,38 @@ nav ul a:visited {
     /* horizontal vertical blur spread color */
     box-shadow: -2px 2px 4px 2px black;
 }
+
 nav ul .current,
 nav ul a:hover,
 nav ul a:focus {
     text-decoration: underline;
 }
+
 nav ul a:active {
     box-shadow: 0 0 4px 2px black;
 }
+
 /* Position related selectors */
 /* first-child and last-child */
 aside ul li:first-child {
     font-weight: bold;
 }
+
 section ol li:last-child {
     font-weight: bold;
 }
+
 /* Style a table */
 table {
     border-collapse: collapse;
 }
+
 /* nth-child selector - odd/even keyword */
 tbody tr:nth-child(even) {
     /* hex color value with 6 characters */
     background-color: #df836c;
 }
+
 /* 
     Using the nth-child with n.
     Where n is 1,2,3,4,... until number of elements
@@ -93,6 +123,7 @@ table th:nth-child(n),
 table td:nth-child(n) {
     border: 1px solid black;
 }
+
 /* Using a formula in nth-child selector */
 table td:nth-child(2n+1) {
     background-color: rgba(0, 0, 0, .2);
