@@ -95,7 +95,7 @@ nav ul a {
 /* header */
 header section h1 {
 	position: relative;
-	background: white url(./images/lone-starfish-wide.jpg) no-repeat center center;
+	background: white url(../images/lone-starfish-wide.jpg) no-repeat center center;
 	background-size: cover;
 	padding: 12rem 0rem 5rem 0rem;
 	text-align: center;
