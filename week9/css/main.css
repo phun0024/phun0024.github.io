@@ -138,7 +138,7 @@ p {
 .banner {
     height: 600px;
     /* vertical horizonal */
-    background: grey url(../images/mobile-banner.jpg) no-repeat center bottom;
+    background: grey url("../images/mobile-banner.jpg") no-repeat center bottom;
     background-size: cover;
 }
 
@@ -147,4 +147,66 @@ p {
     padding-top: 250px;
     text-align: center;
     text-transform: uppercase;
+}
+/* Mobile App Section */
+.btn {
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid grey;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: #00add8;
+	color: inherit;
+}
+
+/* Footer */
+.site-footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 2px solid #00ADD8;
+}
+
+.copy {
+    text-align: right;
+}
+
+/* ------------------------------------
+            Desktop Styles
+--------------------------------------- */
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+
+    .mobile-logo {
+        display: none;
+    }
+
+    .desktop-logo {
+        display: inline-block;
+        max-width: 300px;
+    }
+
+    .banner {
+        background-image: url("../images/desktop-banner.jpg");
+    }
+
+    .banner h1 {
+        color: white;
+    }
+
+    /* App Section */
+    .app img {
+        width: 40%;
+        float: left;
+        margin-right: 1em;
+    }
+
+    .app .btn {
+        float: right;
+    }
 }
