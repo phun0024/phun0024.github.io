@@ -1,0 +1,176 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Starting decorating */
+/* whole body */
+body {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	/* text color */
+	color: black;
+	background: cadetblue;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: lightblue;
+}
+
+img {
+	width: 100%;
+}
+
+h1 {
+	color: white;
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+/* navigation */
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	width: 320px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 1rem;
+}
+
+nav ul a {
+	color: black;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+/* header */
+header section h1 {
+	position: relative;
+	background: white url(./images/lone-starfish-wide.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 12rem 0rem 5rem 0rem;
+	text-align: center;
+}
+
+/* article */
+article, section {
+	padding: 1.5rem;
+}
+
+article img {
+	width: 30%;
+	padding: 1.5rem 1rem 1rem 0;
+	float: left;
+}
+
+article p {
+	padding: 1.5rem 1rem 0 0;
+	line-height: 1.5rem;
+	font-size: 0.9rem;
+}
+
+/* list */
+ul {
+	list-style-type: unset;
+	list-style-position: inside;
+	padding-top: 1rem;
+}
+
+/* form */
+form {
+	padding: 1rem;
+	border: 2px black solid;
+	margin: 1rem 1rem 1rem 0;
+}
+
+form div {
+	padding: 1rem 1rem 1rem 0.5rem;
+}
+
+textarea, input {
+	display: block;
+}
+
+#future input {
+	display: inline;
+	box-sizing: 100%;
+}
+
+#fullname, #email, #message {
+	width: 100%;
+	margin-top: 1rem;
+}
+
+#label-message {
+	padding-bottom: 1rem;
+}
+
+#message {
+	padding-top: 3rem;
+}
+
+#future h3 {
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+}
+
+button {
+	background-color: lightblue;
+	padding: 0.5rem;
+	text-transform: uppercase;
+}
+
+/* footer */
+footer {
+	text-align: end;
+	padding-bottom: 2rem;
+}
