@@ -125,6 +125,10 @@ article p {
 	font-size: 0.9rem;
 }
 
+header section {
+	padding: 0;
+}
+
 /* list */
 ul {
 	list-style-type: unset;
