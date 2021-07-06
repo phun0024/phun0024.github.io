@@ -1,243 +1,285 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: darkslategray;
+    color: darkslategrey;
     /* Adding background image */
     background-image: url(../images/white_brick_wall.png);
+  
     /* fixing the fixed nav overlap */
     padding-top: 92px;
-}
-
-.container {
+  }
+  
+  .container {
     max-width: 1200px;
-    /* margin top-bottom left-right */
+    /* top-bottom left-right */
     margin: 0 auto;
-}
-
-img {
+  }
+  
+  img {
     width: 100%;
-}
-
-h1 {
+  }
+  
+  /* 
+    This is a CSS Comment
+    Shortcut for adding the comment is control + / or command + /
+  */
+  
+  h1 {
     color: peru;
-}
-
-p {
+  }
+  
+  p {
     background-color: lightblue;
-}
-
-/* Selecting multiple elements */
-h1,h2,h3,h4 {
+  }
+  
+  /* Selecting multiple elements */
+  h1,
+  h2,
+  h3,
+  h4 {
     text-decoration: underline;
-}
-
-/* Selecting child elements */
-nav ul {
+  }
+  
+  /* Selecting child elements */
+  nav ul {
     list-style: none;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     display: inline-block;
     width: 49%;
     padding: 1em;
     box-sizing: border-box;
-}
-
-/* Selecting child elements multiple level */
-nav ul a {
+  }
+  
+  /* Selecting child elements multiple level */
+  nav ul a {
     display: block;
-    color: darkslategray;
+    color: darkslategrey;
     text-decoration: none;
     font-size: 1.5rem;
-}
-
-/* Selecting element with id value */
-#treatofweek {
+    /* 1.5 x 16 = 24px */
+  }
+  
+  /* Selecting element with id value */
+  #treatofweek {
     position: relative;
-    /* Color image repeat position-x position-y */
+    /* color image repeat position-x position-y */
     background: orange url(../images/bread.jpg) no-repeat center center;
     background-size: cover;
+  
     color: white;
+  
     font-size: 1.25rem;
+    /* 1.25 x 16 = 20px */
     padding: 1em 1em 4em 1em;
-    /* em is the size of font-size */
+    /* 1 x 20 = 20px */
+  
+    /* viewport based unit */
+    /* height: 100vh; */
+  
     width: 50%;
-}
-
-/* Position - Alsolute */
-.orange-link.large-text {
+  }
+  
+  /* Position - Absolute */
+  /* 0020 */
+  .orange-link.large-text {
     position: absolute;
     bottom: 0;
-    right:0;
-}
-/* Selecting HTML elements with class name */
-.orange-link {
+    right: 0;
+  }
+  
+  /* Selecting HTML elements with class name */
+  .orange-link {
     padding: 1.5em;
     width: 300px;
     display: block;
     background-color: darkslategrey;
     color: orange;
     text-decoration: none;
-}
-
-.large-text {
+  }
+  
+  .large-text {
     font-size: 20px;
-}
-
-/* Example of Float layout */
-article,
-aside {
+  }
+  
+  /* Example of Float layout */
+  article,
+  aside {
     width: 80%;
     background-color: rgba(255, 255, 255, 0.6);
     border: 1px solid black;
     padding: 1.5em;
     box-sizing: border-box;
     float: left;
-}
-
-aside {
-    width: 20%;    
-}
-
-/* Clearing the float from the sections */
-section {
+  }
+  
+  aside {
+    width: 20%;
+  }
+  
+  /* clearing the float from the sections */
+  section {
     clear: both;
-}
-
-/* Direct child selector */
-article>p {
+  }
+  
+  /* Direct child selector */
+  article>p {
     /* CSS Typography Properties */
     font-size: 24px;
     font-weight: bold;
     line-height: 1.5;
     text-transform: lowercase;
     text-align: center;
-}
-
-/* Adjacent sibling selector */
-h3+ul {
+    /* 1em = 24px */
+    /* 
+      html = 20px
+      1rem = 20px
+      font-size: .2rem; .2 x 20 = 4px
+      1em = 4px
+     */
+  }
+  
+  /* Adjacent sibling selector */
+  h3+ul {
     border: 1px solid black;
-}
-
-/* Sibling selector */
-h3~p {
+  }
+  
+  /* Sibling selector */
+  
+  h3~p {
     text-transform: uppercase;
-}
-
-/* Attribute selector */
-[href="#treatofweek"] {
+  }
+  
+  /* Attribute selector */
+  [href="#treatofweek"] {
     font-weight: bold;
-}
-
-img[src$=".jpg"] {
-    border: 4px black solid;
-}
-
-/* Fixed navigation */
-nav {
+  }
+  
+  img[src$=".jpg"] {
+    border: 4px solid black;
+  }
+  
+  /* fixed navigation */
+  nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 999;
-}
-
-/* 
-    Using  Pseudo classes
+  }
+  
+  /* 
+    Using pseudo classes 
     Styling navigation
-*/
-nav ul a,
-nav ul a:link,
-nav ul a:visited {
+  */
+  
+  nav ul a,
+  nav ul a:link,
+  nav ul a:visited {
     background-color: orange;
     /* horizontal vertical blur spread color */
     box-shadow: -2px 2px 4px 2px black;
-}
-
-nav ul .current,
-nav ul a:hover,
-nav ul a:focus {
+  }
+  
+  nav ul .current,
+  nav ul a:hover,
+  nav ul a:focus {
     text-decoration: underline;
-}
-
-nav ul a:active {
+  }
+  
+  nav ul a:active {
     box-shadow: 0 0 4px 2px black;
-}
-
-/* Position related selectors */
-/* first-child and last-child */
-aside ul li:first-child {
+  }
+  
+  /* Position related selectors */
+  /* first-child and last-child */
+  aside ul li:first-child {
     font-weight: bold;
-}
-
-section ol li:last-child {
+  }
+  
+  section ol li:last-child {
     font-weight: bold;
-}
-
-/* Style a table */
-table {
+  }
+  
+  /* Styling a table */
+  table {
     border-collapse: collapse;
-}
-
-/* nth-child selector - odd/even keyword */
-tbody tr:nth-child(even) {
+  }
+  
+  /* nth-child selector - odd/even keyword */
+  tbody tr:nth-child(even) {
     /* hex color value with 6 characters */
-    background-color: #df836c;
-}
-
-/* 
-    Using the nth-child with n.
-    Where n is 1,2,3,4,... until number of elements
-*/
-table th:nth-child(n),
-table td:nth-child(n) {
-    border: 1px solid black;
-}
-
-/* Using a formula in nth-child selector */
-table td:nth-child(2n+1) {
+    background-color: #d5836c;
+  }
+  
+  /*
+    Using the nth-child with n. 
+    Where n is 0,1,2,3... until number of elements
+  */
+  
+  /* 
+    table th,
+    table td{ }
+   */
+  table th:nth-child(n),
+  table td:nth-child(n) {
+    /* hex color value with 3 characters */
+    border: 1px solid #000;
+  }
+  
+  /* using a formula in nth-child selector */
+  table td:nth-child(2n+1) {
     background-color: rgba(0, 0, 0, .2);
-}
-
-/* CSS specificity
-    Formula: inline-styles id class tag-name */
-
-footer {
+  }
+  
+  /* 
+    CSS Specificity 
+    Formula: inline-styles id class tag-name
+  */
+  
+  /* 0001 */
+  footer {
     background-color: aqua;
-}
-
-body footer {
+  }
+  
+  /* 0002 */
+  body footer {
     background-color: orange;
-}
-
-footer {
+  }
+  
+  /* 0001 */
+  footer {
     background-color: red;
-}
-
-/* Using inline style = 1000
-            vs
-    using 2 tags = 0002 */
-article h2 {
+  }
+  
+  /* 
+    using inline styles = 1000 
+             VS
+    using two tags = 0002 
+  */
+  article h2 {
     text-transform: lowercase;
-}
-
-/* 0010 */
-.site-footer {
+  }
+  
+  /* 0010 */
+  .site-footer {
     background-color: cornflowerblue;
-}
-
-/* 0012 */
-body footer.site-footer {
+  }
+  
+  /* 0012 */
+  body footer.site-footer {
     background-color: teal;
-}
-
-/* CSS Box Model */
-section p {
-    width:50%;
+  }
+  
+  /* CSS Box Model */
+  
+  section p {
+    width: 50%;
     /* top-bottom left-right */
-    padding: 1em 0.5em;
+    padding: 1em .5em;
     /* top right bottom left */
     margin: -1em 2em 2em 2em;
-    /* We can use single side margin, padding  or border by adding -side example border-top, border-right, etc. */
+    /* We can use single side margin, padding or border by adding -side example border-top border-right etc. */
     border-bottom: 2px solid black;
-}
+  }
