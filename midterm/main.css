@@ -142,7 +142,6 @@ textarea, input {
 
 #future input {
 	display: inline;
-	box-sizing: 100%;
 }
 
 #fullname, #email, #message {
