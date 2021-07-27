@@ -1,0 +1,18 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+h1 i::before {
+    font-size: 3rem;
+    color: coral;
+}
+
+iframe {
+    width: 100%;
+}
