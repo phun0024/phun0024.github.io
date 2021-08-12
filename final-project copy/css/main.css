@@ -206,10 +206,31 @@ h1 {
 }
 .digital-transformation,
 .marketing,
-.video0production,
+.video-production,
 .web-development,
 .print,
 .john,
 .bob {
     background-color: #ffe6ac;
+    margin: 0 15px;
+}
+
+.service h3,
+.service p,
+.service a {
+    padding: 0 15px;
+}
+
+.service a{
+    background-color: #222;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+.service {
+    padding-bottom: 25px;
+    margin: 10px 0;
+}
+.service a {
+    margin-left: 15px;
 }
