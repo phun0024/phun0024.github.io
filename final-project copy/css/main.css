@@ -164,7 +164,7 @@ form {
 }
 /* Banner & Title */
 .banner {
-    background-image: url(../images/main-banner.jpg);
+    background: grey url(../images/main-banner.jpg) no-repeat center center;
     padding: 50px 0;
     background-size: cover;
 }
@@ -183,7 +183,7 @@ h1 {
     text-decoration: none;
     color: black;
     background-color: #c78c06;
-    padding: 4%;
+    padding: 30px;
 }
 .banner-contents p {
     padding-top: 10px;
@@ -229,8 +229,31 @@ h1 {
 }
 .service {
     padding-bottom: 25px;
-    margin: 10px 0;
+    margin: 10px 15px;
 }
 .service a {
     margin-left: 15px;
+}
+/* Vision */
+#vision {
+    background: grey url(../images/vision.jpg) no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 30px 0;
+}
+#vision h2 {
+    margin: 30px 0;
+}
+
+#vision h2,
+#vision p,
+#vision a {
+    margin: 15px;
+}
+#vision a {
+    background: url(../images/vision.jpg) no-repeat top center;
+    padding: 25px;
+    border: #c78c06 1px solid;
+    color: white;
+    text-decoration: none;
 }
