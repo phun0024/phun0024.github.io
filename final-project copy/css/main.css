@@ -163,17 +163,22 @@ form {
     margin: 0 auto;
 }
 /* Banner & Title */
+.banner {
+    background-image: url(../images/main-banner.jpg);
+    padding: 50px 0;
+    background-size: cover;
+}
+
+h1 {
+    margin: 0px;
+}
+
 .banner-contents {
-    background-color: rgba(0, 0, 0, 0.404);
-    padding: 0 2.5% 40px;
-    position: relative;
-    margin-top: -78%;
+    background-color: rgba(34, 34, 34, 0.651);
+    padding: 40px 30px 50px;
     color: white;
 }
-h1 {
-    padding-top: 40px;
-    line-height: 1.2;
-}
+
 .banner-contents a {
     text-decoration: none;
     color: black;
@@ -181,6 +186,7 @@ h1 {
     padding: 4%;
 }
 .banner-contents p {
+    padding-top: 10px;
     margin: 0 auto 6%;
 }
 /* --------------------------------
@@ -189,7 +195,6 @@ h1 {
 /* About */
 #about {
     background-color: #ffe6ac;
-    margin-top: 9%;
     padding: 15px;
 }
 #about h2 {
