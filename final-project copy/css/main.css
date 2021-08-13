@@ -239,7 +239,7 @@ h1 {
     background: grey url(../images/vision.jpg) no-repeat center center;
     background-size: cover;
     color: white;
-    padding: 30px 0;
+    padding: 30px 0 40px;
 }
 #vision h2 {
     margin: 30px 0;
@@ -251,9 +251,12 @@ h1 {
     margin: 15px;
 }
 #vision a {
-    background: url(../images/vision.jpg) no-repeat top center;
+    background: rgba(34, 34, 34, 0.795);
     padding: 25px;
     border: #c78c06 1px solid;
     color: white;
     text-decoration: none;
+}
+#vision p {
+ margin-bottom: 30px;
 }
