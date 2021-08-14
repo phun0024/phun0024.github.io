@@ -221,18 +221,22 @@ h1 {
     padding: 0 15px;
 }
 
-.service a{
+.service a {
     background-color: #222;
     text-decoration: none;
     color: white;
     padding: 25px;
+    margin-left: 15px;
 }
 .service {
     padding-bottom: 25px;
     margin: 10px 15px;
 }
-.service a {
-    margin-left: 15px;
+.service p {
+    padding-bottom: 15px;
+}
+#services div {
+    padding-bottom: 40px;
 }
 /* Vision */
 #vision {
@@ -304,4 +308,35 @@ button {
     color: #c78c06;
     border: none;
     font-size: 1.5rem;
+}
+/* Hours */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid #222;
+}
+table td,
+table th {
+    padding: 15px;
+}
+table thead {
+    background-color: #ffe6ac;
+}
+/* Location */
+.location iframe{
+    width: 100%;
+}
+/* -------------------------
+            Footer
+---------------------------- */
+footer {
+    background: #222;
+    color: #c78c06;
+    padding: 15px; 
+}
+footer a {
+    color: #c78c06;
 }
