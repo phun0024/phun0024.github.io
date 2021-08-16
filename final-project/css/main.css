@@ -152,15 +152,23 @@ Use of CSS Flexbox properties for a minimum of one element  */
     color: black;
 }
 /* Search Box */
-input {
-    width: 92%;
-    height: 2.5rem;
-}
-button {
-    margin: 0 auto 10px;
-}
-form {
+.nav-list form {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
     margin: 0 auto;
+}
+#search {
+    font-size: 1.1rem;
+    padding: 4px;
+}
+.nav-list i {
+    padding: 5px;
+    border: #c78c06 1px solid;
+}
+.nav-list button {
+    margin: 2px 0 0;
+    padding: 0;
 }
 /* Banner & Title */
 .banner {
@@ -188,10 +196,17 @@ h1 {
 .banner-contents p {
     padding-top: 10px;
     margin: 0 auto 6%;
+    padding-bottom: 15px;
 }
 /* --------------------------------
             Main            
 -----------------------------------*/
+.banner i,
+#services i,
+#vision i {
+    font-size: 1rem;
+    padding: 0 10px;
+}
 /* About */
 #about {
     background-color: #ffe6ac;
@@ -339,4 +354,181 @@ footer {
 }
 footer a {
     color: #c78c06;
+}
+/* --------------------------------------------
+                Desktop Style
+----------------------------------------------- */
+@media screen and (min-width: 760px) {
+    html {
+        font-size: 1rem;
+    }
+    /* --------------------------------------
+                     Header
+    ----------------------------------------- */
+    /* -----Navigation----- */
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 15px;
+        align-items: center;
+        max-width: 900px;
+    }
+    ul li {
+        display: block;
+    }
+    /* ---Logo--- */
+    .logo {
+        width: 80%;
+    }
+    .nav-list li:first-child {
+        text-align: left;
+        background: none;
+    }
+    .nav-list li:first-child a:hover,
+    .nav-list li:first-child a:focus {
+        background: #222;
+    }
+    /* -----Menu----- */
+    .nav-list a,
+    .nav-list a:link,
+    .nav-list a:visited {
+        padding: 0.5em 17px
+    }
+    /* -----Banner----- */
+    .banner-contents {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+        /* --------------------------------------
+                     Main
+    ----------------------------------------- */
+    /* -----About----- */
+    #about {
+        padding: 25px 5% 35px;
+    }
+    #about img {
+        width: 35%;
+        float: left;
+        margin: 0 2% 0 5%;
+    }
+    #about h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.5rem;
+    }
+    #about p {
+        font-size: 12px;
+        margin: 10px 35px;
+    }
+    /* -----Services----- */
+    #services {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .services {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: stretch;
+        align-self: stretch;
+        gap: 1em;
+        padding: 0;
+    }
+    .digital-transformation {
+        grid-column: 1 / span 3;
+    }
+    .marketing {
+        grid-column: 4 / span 3;
+    }
+    .video-production {
+        grid-column: 1 / span 2;
+        grid-row-start: 2;
+    }
+    .web-development {
+        grid-column: 3 / span 2;
+        grid-row-start: 2;
+    }
+    .print {
+        grid-column: 5 / span 2;
+        grid-row-start: 2;
+    }
+    .services h3 {
+        font-size: 1.6rem;
+        font-weight: bolder;
+    }
+    .services p {
+        font-size: 12px;
+        padding-bottom: 0;
+    }
+    .services a {
+        display: block;
+        margin: 0 15px;
+        text-align: center;
+    }
+    .services i {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    #services .digital-transformation,
+    #services .marketing,
+    #services .video-production,
+    #services .web-development,
+    #services .print {
+        padding-bottom: 10px;
+        align-self: flex-start;
+        margin: 0;
+    }
+    #services div {
+        padding-bottom: 0;
+    }
+    /* -----Vision----- */
+    #vision div {
+       max-width: 900px;
+       margin: 0 auto;
+    }
+    #vision i {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    #vision p {
+        padding-bottom: 10px;
+    }
+    /* -----Team----- */
+    .team {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .team img {
+        width: 50%;
+    }
+    .john img {
+        float: left;
+    }
+    .bob img {
+        float: right;
+    }
+    .john div {
+        margin: 0 0 0 50%;
+    }
+    .bob div {
+        margin: 0 50% 0 0;
+    }
+    /* -----Contact----- */
+    .contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .form,
+    .location {
+        flex-basis: calc(50% - 20px);
+    }
+    .hours {
+        order: 1;
+        width: 100%;
+    }
+
 }
