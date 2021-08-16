@@ -496,6 +496,10 @@ footer a {
         padding-bottom: 10px;
     }
     /* -----Team----- */
+    #team {
+        width: 900px;
+        margin: 0 auto;
+    }
     .team {
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -516,6 +520,10 @@ footer a {
         margin: 0 50% 0 0;
     }
     /* -----Contact----- */
+    #contact {
+        width: 900px;
+        margin: 0 auto;
+    }
     .contact {
         display: flex;
         flex-direction: row;
@@ -530,5 +538,8 @@ footer a {
         order: 1;
         width: 100%;
     }
-
+    /* Footer */
+    footer {
+        margin-top: 20px;
+    }
 }
