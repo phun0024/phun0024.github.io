@@ -152,6 +152,7 @@ Use of CSS Flexbox properties for a minimum of one element  */
     color: black;
 }
 /* Search Box */
+
 .nav-list form {
     display: flex;
     flex-direction: row;
@@ -374,6 +375,7 @@ footer a {
         padding: 15px;
         align-items: center;
         max-width: 900px;
+        font-size: 0.8rem;
     }
     ul li {
         display: block;
@@ -385,6 +387,7 @@ footer a {
     .nav-list li:first-child {
         text-align: left;
         background: none;
+        width: 15%;
     }
     .nav-list li:first-child a:hover,
     .nav-list li:first-child a:focus {
@@ -395,6 +398,10 @@ footer a {
     .nav-list a:link,
     .nav-list a:visited {
         padding: 0.5em 17px
+    }
+    /* -----Search Bar----- */
+    .nav-list li:last-child {
+        width: 25%;
     }
     /* -----Banner----- */
     .banner-contents {
@@ -421,6 +428,11 @@ footer a {
     #about p {
         font-size: 12px;
         margin: 10px 35px;
+    }
+    #about div {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 900px;
     }
     /* -----Services----- */
     #services {
@@ -483,6 +495,10 @@ footer a {
     #services div {
         padding-bottom: 0;
     }
+    #services h3 {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
     /* -----Vision----- */
     #vision div {
        max-width: 900px;
@@ -497,8 +513,11 @@ footer a {
     }
     /* -----Team----- */
     #team {
-        width: 900px;
+        max-width: 900px;
         margin: 0 auto;
+    }
+    #team p {
+        font-size: 0.7rem;
     }
     .team {
         display: grid;
@@ -521,8 +540,9 @@ footer a {
     }
     /* -----Contact----- */
     #contact {
-        width: 900px;
+        width: 100%;
         margin: 0 auto;
+        max-width: 900px;
     }
     .contact {
         display: flex;
@@ -541,5 +561,9 @@ footer a {
     /* Footer */
     footer {
         margin-top: 20px;
+    }
+    footer div {
+        max-width: 900px;
+        margin: 0 auto;
     }
 }
