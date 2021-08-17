@@ -555,7 +555,7 @@ footer a {
     }
     .form,
     .location {
-        flex-basis: calc(50% - 20px);
+        flex-basis: calc(50% - 5px);
     }
     .hours {
         order: 1;
