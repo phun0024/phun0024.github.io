@@ -548,7 +548,10 @@ footer a {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+    .contact h3 {
+        font-size: 2rem;
     }
     .form,
     .location {
